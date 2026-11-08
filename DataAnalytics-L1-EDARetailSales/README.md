@@ -1,44 +1,40 @@
-# Customer Segmentation Analysis
+# Data Cleaning – Titanic Dataset
 
 ## Project Overview
-This project performs customer segmentation using RFM Analysis and K-Means Clustering on the UCI Online Retail Dataset.
+This project demonstrates professional data cleaning techniques using Python, Pandas, and NumPy on the Titanic dataset.
 
 ## Objective
-To group customers based on their purchasing behavior and identify valuable customer segments.
+To transform a messy dataset into a clean and analysis-ready dataset by identifying and handling missing values, duplicates, inconsistent formatting, outliers, and incorrect data types.
 
 ## Technologies Used
 - Python
 - Pandas
 - NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
 - Jupyter Notebook
 
-## Data Cleaning
-- Removed missing Customer IDs.
-- Removed duplicate records.
-- Removed cancelled transactions.
-- Removed invalid quantities and prices.
+## Dataset
+Titanic Dataset – 891 rows and 12 columns.
 
-## Analysis Performed
-- RFM Analysis (Recency, Frequency, Monetary)
-- Feature Standardization using StandardScaler
-- Elbow Method
-- K-Means Clustering
-- Customer Cluster Profiling
-- Scatter Plot Visualizations
-- Customer Count Bar Chart
+## Data Cleaning Steps
+1. Loaded and inspected the dataset.
+2. Generated a data quality report.
+3. Handled missing values using median and mode.
+4. Removed the Cabin column due to excessive missing values.
+5. Checked and removed duplicate records.
+6. Standardized text formatting.
+7. Corrected data types.
+8. Detected outliers using the IQR method.
+9. Retained genuine outliers.
+10. Compared before and after cleaning results.
 
-## Key Findings
-- Total Customers Analyzed: 4,338
-- Number of Clusters: 3
-- Cluster 0: At-Risk Customers
-- Cluster 1: Regular Customers
-- Cluster 2: VIP / High-Value Customers
+## Final Results
+- Original rows: 891
+- Final rows: 891
+- Original columns: 12
+- Final columns: 11
+- Missing values after cleaning: 0
+- Duplicate rows: 0
+- Output file: `titanic_cleaned.csv`
 
 ## Conclusion
-K-Means clustering successfully segmented customers into three groups. These insights can help businesses improve customer retention and create targeted marketing strategies.
-
-## Dataset
-UCI Online Retail Dataset – https://archive.ics.uci.edu/dataset/352/online+retail
+The Titanic dataset was successfully cleaned and transformed into an analysis-ready dataset. The cleaned data was exported as a CSV file.
